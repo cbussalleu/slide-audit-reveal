@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArchitectureSlide = () => {
   return (
-    <div className="min-h-screen bg-white p-12 overflow-auto">
+    <div className="bg-white p-12">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-8 text-center">
           Information Architecture: Multi-step Flow
