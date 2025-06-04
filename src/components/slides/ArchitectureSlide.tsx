@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const ArchitectureSlide = () => {
   return (
-    <div className="min-h-[600px] bg-white p-12">
+    <div className="min-h-screen bg-white p-12 overflow-auto">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-8 text-center">
           Information Architecture: Multi-step Flow
@@ -131,10 +130,11 @@ const ArchitectureSlide = () => {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="absolute bottom-4 left-4 right-4 bg-[#F8F9FA] p-2 rounded text-xs text-gray-500">
-        <strong>Sources:</strong> Designlab - Multi-Step Forms Design, Lemonade Customer Experience Case Study
+        {/* Footer */}
+        <div className="mt-8 bg-[#F8F9FA] p-2 rounded text-xs text-gray-500">
+          <strong>Sources:</strong> Designlab - Multi-Step Forms Design, Lemonade Customer Experience Case Study
+        </div>
       </div>
     </div>
   );
