@@ -13,7 +13,7 @@ const TitleSlide = () => {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold text-[#1E3F90] mb-6 leading-tight">
-          UX Audit:<br />
+          Experience Audit:<br />
           <span className="text-[#E8092D]">Farmers Insurance</span>
         </h1>
         
