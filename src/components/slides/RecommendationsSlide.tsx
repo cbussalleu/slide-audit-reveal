@@ -4,51 +4,51 @@ import React from 'react';
 const RecommendationsSlide = () => {
   const phases = [
     {
-      phase: "Fase 1",
-      timeline: "0-3 meses",
-      effort: "Bajo Esfuerzo",
-      impact: "Alto Impacto",
+      phase: "Phase 1",
+      timeline: "0-3 months",
+      effort: "Low Effort",
+      impact: "High Impact",
       color: "bg-green-500",
       items: [
-        "Cotización rápida primero (sin datos personales)",
-        "Reescritura de microcopy a lenguaje conversacional", 
-        "Indicadores de progreso claros (Paso X de Y)",
-        "Tiempo estimado restante"
+        "Quick quote first (no personal data)",
+        "Rewrite microcopy to conversational language", 
+        "Clear progress indicators (Step X of Y)",
+        "Estimated time remaining"
       ]
     },
     {
-      phase: "Fase 2", 
-      timeline: "3-6 meses",
-      effort: "Esfuerzo Medio",
-      impact: "Alto Impacto",
+      phase: "Phase 2", 
+      timeline: "3-6 months",
+      effort: "Medium Effort",
+      impact: "High Impact",
       color: "bg-blue-500",
       items: [
-        "Progressive disclosure (una pregunta por pantalla)",
-        "Experiencia móvil nativa optimizada",
-        "Eliminación de redirecciones web",
-        "Auto-save de progreso"
+        "Progressive disclosure (one question per screen)",
+        "Optimized native mobile experience",
+        "Eliminate web redirects",
+        "Auto-save progress"
       ]
     },
     {
-      phase: "Fase 3",
-      timeline: "6-12 meses", 
-      effort: "Alto Esfuerzo",
-      impact: "Medio Impacto",
+      phase: "Phase 3",
+      timeline: "6-12 months", 
+      effort: "High Effort",
+      impact: "Medium Impact",
       color: "bg-purple-500",
       items: [
-        "Personalización adaptativa según perfil",
-        "Integración de IA conversacional",
-        "Predicción de abandono en tiempo real",
-        "Optimización automática de flujos"
+        "Adaptive personalization by profile",
+        "Conversational AI integration",
+        "Real-time abandonment prediction",
+        "Automatic flow optimization"
       ]
     }
   ];
 
   return (
-    <div className="min-h-[600px] bg-white p-12">
+    <div className="h-full bg-white p-12 overflow-y-auto">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-12 text-center">
-          Roadmap de Mejoras por Fases
+          Improvement Roadmap by Phases
         </h1>
 
         {/* Timeline visualization */}
@@ -91,7 +91,7 @@ const RecommendationsSlide = () => {
         {/* Priority matrix */}
         <div className="bg-[#E8EDF9] rounded-lg p-8">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-6 text-center">
-            Matriz de Priorización: Impacto vs. Esfuerzo
+            Prioritization Matrix: Impact vs. Effort
           </h2>
           
           <div className="relative bg-white rounded-lg p-6 h-80">
@@ -100,36 +100,36 @@ const RecommendationsSlide = () => {
             <div className="absolute bottom-6 left-6 top-6 w-px bg-gray-300"></div>
             
             {/* Labels */}
-            <div className="absolute bottom-2 right-2 text-xs text-gray-500">Alto Esfuerzo</div>
-            <div className="absolute bottom-2 left-2 text-xs text-gray-500">Bajo Esfuerzo</div>
-            <div className="absolute top-2 left-8 text-xs text-gray-500 transform -rotate-90 origin-center">Alto Impacto</div>
-            <div className="absolute bottom-12 left-8 text-xs text-gray-500 transform -rotate-90 origin-center">Bajo Impacto</div>
+            <div className="absolute bottom-2 right-2 text-xs text-gray-500">High Effort</div>
+            <div className="absolute bottom-2 left-2 text-xs text-gray-500">Low Effort</div>
+            <div className="absolute top-2 left-8 text-xs text-gray-500 transform -rotate-90 origin-center">High Impact</div>
+            <div className="absolute bottom-12 left-8 text-xs text-gray-500 transform -rotate-90 origin-center">Low Impact</div>
             
             {/* Quick wins (High Impact, Low Effort) */}
             <div className="absolute top-8 left-8 bg-green-500 text-white p-2 rounded text-xs font-semibold">
-              Fase 1<br/>Quick Wins
+              Phase 1<br/>Quick Wins
             </div>
             
             {/* Major projects (High Impact, High Effort) */}
             <div className="absolute top-8 right-8 bg-blue-500 text-white p-2 rounded text-xs font-semibold">
-              Fase 2<br/>Proyectos Mayores
+              Phase 2<br/>Major Projects
             </div>
             
             {/* Fill-ins (Low Impact, Low Effort) */}
             <div className="absolute bottom-16 left-8 bg-yellow-500 text-white p-2 rounded text-xs font-semibold">
-              Mejoras<br/>Incrementales
+              Incremental<br/>Improvements
             </div>
             
             {/* Thankless tasks (Low Impact, High Effort) */}
             <div className="absolute bottom-16 right-8 bg-purple-500 text-white p-2 rounded text-xs font-semibold">
-              Fase 3<br/>Innovación
+              Phase 3<br/>Innovation
             </div>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-4 left-4 right-4 bg-[#F8F9FA] p-2 rounded text-xs text-gray-500">
-        <strong>Fuente:</strong> Nielsen Norman Group - Website Forms Usability
+        <strong>Source:</strong> Nielsen Norman Group - Website Forms Usability
       </div>
     </div>
   );

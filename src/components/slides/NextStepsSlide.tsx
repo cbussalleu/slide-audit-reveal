@@ -4,63 +4,63 @@ import React from 'react';
 const NextStepsSlide = () => {
   const immediateActions = [
     {
-      action: "Audit completo de microcopy actual",
+      action: "Complete audit of current microcopy",
       owner: "UX Writing Team",
-      timeline: "1-2 semanas",
-      priority: "Alta"
+      timeline: "1-2 weeks",
+      priority: "High"
     },
     {
-      action: "Prototipo de flujo simplificado",
+      action: "Prototype simplified flow",
       owner: "UX Design Team", 
-      timeline: "2-3 semanas",
-      priority: "Alta"
+      timeline: "2-3 weeks",
+      priority: "High"
     },
     {
-      action: "Testing A/B de indicadores de progreso",
+      action: "A/B test progress indicators",
       owner: "Product Team",
-      timeline: "3-4 semanas", 
-      priority: "Media"
+      timeline: "3-4 weeks", 
+      priority: "Medium"
     }
   ];
 
   const successMetrics = [
     {
-      metric: "Tiempo por paso",
-      current: "2-3 min promedio",
-      target: "< 30 segundos",
+      metric: "Time per step",
+      current: "2-3 min average",
+      target: "< 30 seconds",
       method: "Analytics + User Testing"
     },
     {
-      metric: "Tasa de abandono",
-      current: "67% industria",
+      metric: "Abandonment rate",
+      current: "67% industry",
       target: "< 35%",
       method: "Funnel Analysis"
     },
     {
-      metric: "Satisfacción usuario",
-      current: "No medido",
+      metric: "User satisfaction",
+      current: "Not measured",
       target: "NPS > 70",
       method: "Post-completion Survey"
     },
     {
-      metric: "Conversión móvil",
-      current: "~20% de desktop",
-      target: "80% de desktop",
+      metric: "Mobile conversion",
+      current: "~20% of desktop",
+      target: "80% of desktop",
       method: "Device Analytics"
     }
   ];
 
   return (
-    <div className="min-h-[600px] bg-white p-12">
+    <div className="h-full bg-white p-12 overflow-y-auto">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-12 text-center">
-          Plan de Implementación
+          Implementation Plan
         </h1>
 
         {/* Immediate actions */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-6">
-            Acciones Inmediatas
+            Immediate Actions
           </h2>
           
           <div className="space-y-4">
@@ -69,14 +69,14 @@ const NextStepsSlide = () => {
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="text-lg font-semibold text-gray-800 flex-1">{action.action}</h3>
                   <div className={`px-3 py-1 rounded-full text-xs font-bold ${
-                    action.priority === 'Alta' ? 'bg-red-100 text-red-700' : 'bg-yellow-100 text-yellow-700'
+                    action.priority === 'High' ? 'bg-red-100 text-red-700' : 'bg-yellow-100 text-yellow-700'
                   }`}>
                     {action.priority}
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
                   <div>
-                    <span className="font-medium">Responsable:</span> {action.owner}
+                    <span className="font-medium">Owner:</span> {action.owner}
                   </div>
                   <div>
                     <span className="font-medium">Timeline:</span> {action.timeline}
@@ -90,15 +90,15 @@ const NextStepsSlide = () => {
         {/* Success metrics */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-6">
-            Métricas de Éxito
+            Success Metrics
           </h2>
           
           <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
             <div className="grid grid-cols-4 bg-[#1E3F90] text-white font-semibold text-sm">
-              <div className="p-4">Métrica</div>
-              <div className="p-4">Estado Actual</div>
-              <div className="p-4">Objetivo</div>
-              <div className="p-4">Método de Medición</div>
+              <div className="p-4">Metric</div>
+              <div className="p-4">Current State</div>
+              <div className="p-4">Target</div>
+              <div className="p-4">Measurement Method</div>
             </div>
             
             {successMetrics.map((metric, index) => (
@@ -117,13 +117,13 @@ const NextStepsSlide = () => {
         {/* Timeline */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-6">
-            Timeline de Implementación
+            Implementation Timeline
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-green-50 border border-green-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-green-600 mb-3">Q1 2025</h3>
-              <h4 className="font-medium mb-2">Fase 1 - Quick Wins</h4>
+              <h4 className="font-medium mb-2">Phase 1 - Quick Wins</h4>
               <ul className="text-sm space-y-1">
                 <li>• Microcopy optimization</li>
                 <li>• Progress indicators</li>
@@ -133,7 +133,7 @@ const NextStepsSlide = () => {
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-blue-600 mb-3">Q2-Q3 2025</h3>
-              <h4 className="font-medium mb-2">Fase 2 - Major Improvements</h4>
+              <h4 className="font-medium mb-2">Phase 2 - Major Improvements</h4>
               <ul className="text-sm space-y-1">
                 <li>• Mobile native experience</li>
                 <li>• Progressive disclosure</li>
@@ -143,7 +143,7 @@ const NextStepsSlide = () => {
 
             <div className="bg-purple-50 border border-purple-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-purple-600 mb-3">Q4 2025</h3>
-              <h4 className="font-medium mb-2">Fase 3 - Innovation</h4>
+              <h4 className="font-medium mb-2">Phase 3 - Innovation</h4>
               <ul className="text-sm space-y-1">
                 <li>• AI personalization</li>
                 <li>• Predictive analytics</li>
@@ -156,16 +156,16 @@ const NextStepsSlide = () => {
         {/* Contact information */}
         <div className="bg-[#E8EDF9] rounded-lg p-8 text-center">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-4">
-            Próximos Pasos y Contacto
+            Next Steps and Contact
           </h2>
           
           <p className="text-gray-700 mb-6">
-            Para discutir la implementación de estas recomendaciones y definir prioridades específicas:
+            To discuss implementation of these recommendations and define specific priorities:
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-[#1E3F90] mb-2">Equipo UX Research</h3>
+              <h3 className="font-semibold text-[#1E3F90] mb-2">UX Research Team</h3>
               <p className="text-sm text-gray-600">ux-research@company.com</p>
             </div>
             
@@ -177,7 +177,7 @@ const NextStepsSlide = () => {
 
           <div className="mt-6 pt-6 border-t border-gray-300">
             <p className="text-sm text-gray-500">
-              Presentación preparada por el Equipo de UX Research • Enero 2025
+              Presentation prepared by UX Research Team • January 2025
             </p>
           </div>
         </div>

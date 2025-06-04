@@ -3,7 +3,7 @@ import React from 'react';
 
 const TitleSlide = () => {
   return (
-    <div className="min-h-[600px] bg-[#E8EDF9] p-12 flex flex-col justify-center">
+    <div className="h-full bg-[#E8EDF9] p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto text-center">
         {/* Abstract geometric shapes */}
         <div className="relative mb-8">
@@ -13,23 +13,23 @@ const TitleSlide = () => {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold text-[#1E3F90] mb-6 leading-tight">
-          Auditoría UX:<br />
+          UX Audit:<br />
           <span className="text-[#E8092D]">Farmers Insurance</span>
         </h1>
         
         <h2 className="text-2xl md:text-3xl text-gray-700 mb-12 font-light">
-          Análisis del Flujo de Cotización para Usuarios Novatos
+          Quote Flow Analysis for New Users
         </h2>
 
         <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 shadow-lg">
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <div>
-              <h3 className="text-lg font-semibold text-[#1E3F90] mb-2">Presentado por:</h3>
-              <p className="text-gray-700">Equipo de Investigación UX</p>
+              <h3 className="text-lg font-semibold text-[#1E3F90] mb-2">Presented by:</h3>
+              <p className="text-gray-700">UX Research Team</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-[#1E3F90] mb-2">Fecha:</h3>
-              <p className="text-gray-700">Enero 2025</p>
+              <h3 className="text-lg font-semibold text-[#1E3F90] mb-2">Date:</h3>
+              <p className="text-gray-700">January 2025</p>
             </div>
           </div>
         </div>

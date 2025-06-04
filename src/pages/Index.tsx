@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause, Maximize } from 'lucide-react';
 import TitleSlide from '../components/slides/TitleSlide';
 import MethodologySlide from '../components/slides/MethodologySlide';
+import CustomerJourneySlide from '../components/slides/CustomerJourneySlide';
 import FrameworkSlide from '../components/slides/FrameworkSlide';
 import FindingsSlide from '../components/slides/FindingsSlide';
 import HeuristicOneSlide from '../components/slides/HeuristicOneSlide';
@@ -23,6 +24,7 @@ const Index = () => {
   const slides = [
     TitleSlide,
     MethodologySlide,
+    CustomerJourneySlide,
     FrameworkSlide,
     FindingsSlide,
     HeuristicOneSlide,
@@ -101,7 +103,7 @@ const Index = () => {
       <div className="bg-white shadow-sm border-b px-6 py-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center space-x-4">
-            <h1 className="text-lg font-semibold text-gray-800">Auditoría UX: Farmers Insurance</h1>
+            <h1 className="text-lg font-semibold text-gray-800">UX Audit: Farmers Insurance</h1>
             <div className="text-sm text-gray-600">
               Slide {currentSlide + 1} of {totalSlides}
             </div>
@@ -139,34 +141,35 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Main Presentation Area */}
-      <div className="relative">
-        <div className="flex items-center justify-center min-h-[calc(100vh-120px)]">
-          {/* Previous Button */}
-          <button
-            onClick={prevSlide}
-            disabled={currentSlide === 0}
-            className="absolute left-4 z-10 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <ChevronLeft size={24} className="text-[#1E3F90]" />
-          </button>
+      {/* Main Presentation Area - 16:9 Aspect Ratio */}
+      <div className="relative flex items-center justify-center min-h-[calc(100vh-120px)] p-4">
+        {/* Previous Button */}
+        <button
+          onClick={prevSlide}
+          disabled={currentSlide === 0}
+          className="absolute left-4 z-10 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <ChevronLeft size={24} className="text-[#1E3F90]" />
+        </button>
 
-          {/* Slide Container */}
-          <div className="w-full max-w-6xl mx-auto px-16">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <CurrentSlideComponent />
-            </div>
+        {/* 16:9 Slide Container */}
+        <div className="w-full max-w-7xl mx-auto">
+          <div 
+            className="bg-white rounded-lg shadow-lg overflow-hidden"
+            style={{ aspectRatio: '16/9' }}
+          >
+            <CurrentSlideComponent />
           </div>
-
-          {/* Next Button */}
-          <button
-            onClick={nextSlide}
-            disabled={currentSlide === totalSlides - 1}
-            className="absolute right-4 z-10 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <ChevronRight size={24} className="text-[#1E3F90]" />
-          </button>
         </div>
+
+        {/* Next Button */}
+        <button
+          onClick={nextSlide}
+          disabled={currentSlide === totalSlides - 1}
+          className="absolute right-4 z-10 p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <ChevronRight size={24} className="text-[#1E3F90]" />
+        </button>
       </div>
 
       {/* Slide Thumbnails */}
