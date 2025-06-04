@@ -154,18 +154,7 @@ const Index = () => {
           {/* Slide Container */}
           <div className="w-full max-w-6xl mx-auto px-16">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div 
-                className="transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                <div className="flex" style={{ width: `${totalSlides * 100}%` }}>
-                  {slides.map((SlideComponent, index) => (
-                    <div key={index} className="w-full flex-shrink-0">
-                      <SlideComponent />
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <CurrentSlideComponent />
             </div>
           </div>
 
