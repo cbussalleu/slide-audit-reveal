@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause, Maximize } from 'lucide-react';
 import TitleSlide from '../components/slides/TitleSlide';
@@ -154,11 +153,10 @@ const Index = () => {
 
         {/* 16:9 Slide Container */}
         <div className="w-full max-w-7xl mx-auto">
-          <div 
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
-            style={{ aspectRatio: '16/9' }}
-          >
-            <CurrentSlideComponent />
+          <div className="bg-white rounded-lg shadow-lg aspect-[16/9] overflow-hidden flex">
+            <div className="w-full h-full overflow-y-auto">
+              <CurrentSlideComponent />
+            </div>
           </div>
         </div>
 
