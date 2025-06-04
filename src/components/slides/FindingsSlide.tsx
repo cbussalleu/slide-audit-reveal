@@ -4,32 +4,32 @@ import React from 'react';
 const FindingsSlide = () => {
   const findings = [
     {
-      title: "Terminología compleja",
-      impact: "ALTO",
+      title: "Complex terminology",
+      impact: "HIGH",
       color: "bg-[#E8092D]",
       icon: "⚠️"
     },
     {
-      title: "Falta de indicadores de progreso",
-      impact: "ALTO", 
+      title: "Lack of progress indicators",
+      impact: "HIGH", 
       color: "bg-[#E8092D]",
       icon: "📊"
     },
     {
-      title: "Experiencia móvil deficiente",
-      impact: "ALTO",
+      title: "Poor mobile experience",
+      impact: "HIGH",
       color: "bg-[#E8092D]",
       icon: "📱"
     },
     {
-      title: "Validación de errores confusa",
-      impact: "ALTO",
+      title: "Confusing error validation",
+      impact: "HIGH",
       color: "bg-[#E8092D]",
       icon: "❌"
     },
     {
-      title: "Sobrecarga cognitiva",
-      impact: "MEDIO",
+      title: "Cognitive overload",
+      impact: "MEDIUM",
       color: "bg-yellow-500",
       icon: "🧠"
     }
@@ -39,7 +39,7 @@ const FindingsSlide = () => {
     <div className="min-h-[600px] bg-white p-12">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-12 text-center">
-          Problemas Críticos Identificados
+          Critical Issues Identified
         </h1>
 
         <div className="space-y-6 mb-12">
@@ -63,7 +63,7 @@ const FindingsSlide = () => {
         {/* Impact explanation */}
         <div className="bg-[#E8EDF9] rounded-lg p-8">
           <h2 className="text-2xl font-semibold text-[#1E3F90] mb-6 text-center">
-            Criterios de Impacto
+            Impact Criteria
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -71,31 +71,31 @@ const FindingsSlide = () => {
               <div className="w-16 h-16 bg-[#E8092D] rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-lg">!</span>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-2">ALTO</h3>
-              <p className="text-sm text-gray-600">Factor crítico de abandono para usuarios novatos</p>
+              <h3 className="font-semibold text-gray-800 mb-2">HIGH</h3>
+              <p className="text-sm text-gray-600">Critical abandonment factor for new users</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-lg">⚡</span>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-2">MEDIO</h3>
-              <p className="text-sm text-gray-600">Afecta la experiencia pero no bloquea</p>
+              <h3 className="font-semibold text-gray-800 mb-2">MEDIUM</h3>
+              <p className="text-sm text-gray-600">Affects experience but doesn't block</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-lg">✓</span>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-2">BAJO</h3>
-              <p className="text-sm text-gray-600">Mejora incremental de usabilidad</p>
+              <h3 className="font-semibold text-gray-800 mb-2">LOW</h3>
+              <p className="text-sm text-gray-600">Incremental usability improvement</p>
             </div>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-4 left-4 right-4 bg-[#F8F9FA] p-2 rounded text-xs text-gray-500">
-        <strong>Fuente:</strong> Análisis basado en capturas del flujo actual de Farmers Insurance
+        <strong>Source:</strong> Analysis based on current Farmers Insurance flow screenshots
       </div>
     </div>
   );

@@ -3,23 +3,23 @@ import React from 'react';
 
 const FrameworkSlide = () => {
   const heuristics = [
-    { id: 1, title: "Visibilidad del Estado", icon: "👁️" },
-    { id: 2, title: "Coincidencia Mundo Real", icon: "🌍" },
-    { id: 3, title: "Control y Libertad", icon: "🎮" },
-    { id: 4, title: "Consistencia y Estándares", icon: "📐" },
-    { id: 5, title: "Prevención de Errores", icon: "🛡️" },
-    { id: 6, title: "Reconocimiento vs Memoria", icon: "🧠" },
-    { id: 7, title: "Flexibilidad y Eficiencia", icon: "⚡" },
-    { id: 8, title: "Diseño Estético Minimalista", icon: "✨" },
-    { id: 9, title: "Ayuda con Errores", icon: "🔧" },
-    { id: 10, title: "Ayuda y Documentación", icon: "📚" }
+    { id: 1, title: "System Status Visibility", icon: "👁️" },
+    { id: 2, title: "Real World Match", icon: "🌍" },
+    { id: 3, title: "User Control & Freedom", icon: "🎮" },
+    { id: 4, title: "Consistency & Standards", icon: "📐" },
+    { id: 5, title: "Error Prevention", icon: "🛡️" },
+    { id: 6, title: "Recognition vs Recall", icon: "🧠" },
+    { id: 7, title: "Flexibility & Efficiency", icon: "⚡" },
+    { id: 8, title: "Aesthetic & Minimal Design", icon: "✨" },
+    { id: 9, title: "Error Recovery Help", icon: "🔧" },
+    { id: 10, title: "Help & Documentation", icon: "📚" }
   ];
 
   return (
     <div className="min-h-[600px] bg-white p-12">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-[#1E3F90] mb-12 text-center">
-          10 Heurísticas de Nielsen Norman Group
+          Nielsen Norman Group's 10 Usability Heuristics
         </h1>
 
         {/* Circular arrangement */}
@@ -73,7 +73,7 @@ const FrameworkSlide = () => {
       </div>
 
       <div className="absolute bottom-4 left-4 right-4 bg-[#F8F9FA] p-2 rounded text-xs text-gray-500">
-        <strong>Fuente:</strong> Nielsen Norman Group - 10 Usability Heuristics for User Interface Design
+        <strong>Source:</strong> Nielsen Norman Group - 10 Usability Heuristics for User Interface Design
       </div>
     </div>
   );

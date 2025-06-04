@@ -55,7 +55,7 @@ const CustomerJourneySlide = () => {
     }
   ];
 
-  const verMasItems = [
+  const seeMoreItems = [
     { icon: "👥", title: "User Archetypes" },
     { icon: "🔍", title: "Complete UX Audit" },
     { icon: "💭", title: "Motivations Deep Dive" },
@@ -160,11 +160,11 @@ const CustomerJourneySlide = () => {
             </div>
           </div>
 
-          {/* Ver Más Sidebar */}
+          {/* See More Sidebar */}
           <div className="w-48 bg-[#E8EDF9] p-4 rounded-lg">
-            <h3 className="font-semibold text-[#1E3F90] mb-4 text-sm">"VER MÁS" SECTION</h3>
+            <h3 className="font-semibold text-[#1E3F90] mb-4 text-sm">"SEE MORE" SECTION</h3>
             <div className="space-y-3">
-              {verMasItems.map((item, index) => (
+              {seeMoreItems.map((item, index) => (
                 <div 
                   key={index} 
                   className="flex items-center space-x-2 p-2 bg-white rounded border hover:shadow-md transition-shadow cursor-pointer hover:bg-blue-50"
